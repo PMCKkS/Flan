@@ -1,0 +1,128 @@
+# 界面文字直接在本文件配置；name 使用字符串，lore 使用字符串列表。
+# slots 从 0 开始；{name} 领地，{player} 玩家，{page}/{pages} 页码，{state} 状态，{source} 来源，{state_color} 状态颜色。
+gui-version: 3
+rows: 5
+title: "&6玩家权限：{player}"
+state-colors:
+  allowed: '&a'
+  denied: '&c'
+labels:
+  allowed: "允许"
+  denied: "禁止"
+  explicit: "本领地单独设置"
+  inherited: "继承 / 默认"
+filler:
+  enabled: true
+  material: GRAY_STAINED_GLASS_PANE
+  name: ' '
+  lore: []
+buttons:
+  build:
+    slot: 10
+    material: GRASS_BLOCK
+    action: "permission:build"
+    name: "{state_color}建造"
+    lore:
+      - "&7放置、破坏方块和使用桶"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复权限组 / 父领地"
+  container:
+    slot: 11
+    material: CHEST
+    action: "permission:container"
+    name: "{state_color}容器"
+    lore:
+      - "&7打开容器及跨界物品转移"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复权限组 / 父领地"
+  interact:
+    slot: 12
+    material: LEVER
+    action: "permission:interact"
+    name: "{state_color}交互"
+    lore:
+      - "&7按钮、拉杆等方块交互"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复权限组 / 父领地"
+  entity:
+    slot: 13
+    material: ARMOR_STAND
+    action: "permission:entity"
+    name: "{state_color}实体交互"
+    lore:
+      - "&7实体交互、载具及非玩家实体伤害"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复权限组 / 父领地"
+  pickup:
+    slot: 14
+    material: HOPPER
+    action: "permission:pickup"
+    name: "{state_color}拾取"
+    lore:
+      - "&7玩家拾取掉落物"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复权限组 / 父领地"
+  drop:
+    slot: 15
+    material: DROPPER
+    action: "permission:drop"
+    name: "{state_color}丢弃"
+    lore:
+      - "&7玩家丢弃物品"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复权限组 / 父领地"
+  teleport:
+    slot: 16
+    material: ENDER_PEARL
+    action: "permission:teleport"
+    name: "{state_color}传送"
+    lore:
+      - "&7传送进入领地"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复权限组 / 父领地"
+  enter:
+    slot: 22
+    material: OAK_DOOR
+    action: "permission:enter"
+    name: "{state_color}进入"
+    lore:
+      - "&7玩家进入领地"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复权限组 / 父领地"
+  manage:
+    slot: 23
+    material: WRITABLE_BOOK
+    action: "permission:manage"
+    name: "{state_color}管理"
+    lore:
+      - "&7普通权限菜单管理；不能管理信任、转让或删除领地"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复权限组 / 父领地"
+  back:
+    slot: 36
+    material: ARROW
+    action: "back"
+    name: "&e返回信任列表"
+    lore: []
+  remove:
+    slot: 42
+    material: REDSTONE_BLOCK
+    action: "remove"
+    name: "&c取消信任：{player}"
+    lore:
+      - "&7恢复为访客，子领地也会阻止父领地信任继承"
+  close:
+    slot: 40
+    material: BARRIER
+    action: "close"
+    name: "&c关闭"
+    lore: []

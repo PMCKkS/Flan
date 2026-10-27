@@ -1,0 +1,8 @@
+# 领地传送。所有传送均校验归属、进入/传送权限与安全落点。
+teleport:
+  timeout-seconds: 15
+  velocity:
+    enabled: false
+    # 先在 Velocity 安装同一个 Flan JAR，然后复制其 velocity.yml 自动生成的密钥。
+    # 各子服与代理使用同一密钥，至少 32 个字符。服务器名称由代理连接自动识别。
+    secret: ''

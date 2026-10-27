@@ -1,0 +1,21 @@
+# 新领地的默认组与访客/环境权限；不会覆盖已有领地保存的组。
+groups:
+  visitor: [interact, teleport, enter]
+  builder: [build, container, interact, entity, pickup, drop, teleport, enter]
+  manager: [build, container, interact, entity, pickup, drop, teleport, enter, manage]
+defaults:
+  build: false
+  container: false
+  interact: false
+  entity: false
+  pvp: false
+  explosion: false
+  fire: false
+  fluid: false
+  piston: false
+  mob_grief: false
+  pickup: true
+  drop: true
+  teleport: true
+  enter: true
+  manage: false

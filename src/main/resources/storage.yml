@@ -1,0 +1,23 @@
+# 数据存储配置；更换类型请使用 /flan storage migrate，然后重启。
+storage:
+  type: YAML
+  autosave-seconds: 60
+  sqlite:
+    file: flan.db
+  mysql:
+    host: localhost
+    port: 3306
+    database: flan
+    username: root
+    password: ''
+    table-prefix: flan_
+    use-ssl: false
+    # MySQL 8 在未使用 TLS 时可能需要获取 RSA 公钥；仅对可信数据库开启。
+    # 也可通过 parameters 设置 sslMode=VERIFY_IDENTITY 并配置证书，或 serverRSAPublicKeyFile。
+    allow-public-key-retrieval: false
+    parameters: 'characterEncoding=utf8&serverTimezone=UTC'
+    pool:
+      maximum-size: 10
+      minimum-idle: 2
+      connection-timeout-ms: 10000
+      max-lifetime-ms: 1800000

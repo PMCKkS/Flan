@@ -1,0 +1,50 @@
+# 界面文字直接在本文件配置；name 使用字符串，lore 使用字符串列表。
+# slots 从 0 开始；{name} 领地，{player} 玩家，{page}/{pages} 页码，{state} 状态，{source} 来源，{state_color} 状态颜色。
+gui-version: 3
+rows: 6
+title: "&6添加信任玩家 &7{page}/{pages}"
+state-colors:
+  allowed: '&a'
+  denied: '&c'
+labels:
+  allowed: "允许"
+  denied: "禁止"
+  explicit: "本领地单独设置"
+  inherited: "继承 / 默认"
+filler:
+  enabled: true
+  material: GRAY_STAINED_GLASS_PANE
+  name: ' '
+  lore: []
+content-slots: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44]
+player:
+  material: PLAYER_HEAD
+  name: "&a{player}"
+  lore:
+    - "&e点击添加并打开权限设置"
+    - "&7初始使用 builder 组；没有该组时全部关闭"
+buttons:
+  previous:
+    slot: 45
+    material: ARROW
+    action: "previous"
+    name: "&e上一页"
+    lore: []
+  back:
+    slot: 49
+    material: OAK_DOOR
+    action: "back"
+    name: "&e返回信任列表"
+    lore: []
+  close:
+    slot: 50
+    material: BARRIER
+    action: "close"
+    name: "&c关闭"
+    lore: []
+  next:
+    slot: 53
+    material: ARROW
+    action: "next"
+    name: "&e下一页"
+    lore: []

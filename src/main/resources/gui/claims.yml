@@ -1,0 +1,212 @@
+# 界面文字直接在本文件配置；name 使用字符串，lore 使用字符串列表。
+# slots 从 0 开始；{name} 领地，{player} 玩家，{page}/{pages} 页码，{state} 状态，{source} 来源，{state_color} 状态颜色。
+gui-version: 3
+rows: 5
+title: "&6领地权限：{name}"
+state-colors:
+  allowed: '&a'
+  denied: '&c'
+labels:
+  allowed: "允许"
+  denied: "禁止"
+  explicit: "本领地单独设置"
+  inherited: "继承 / 默认"
+filler:
+  enabled: true
+  material: GRAY_STAINED_GLASS_PANE
+  name: ' '
+  lore: []
+buttons:
+  build:
+    slot: 10
+    material: GRASS_BLOCK
+    action: "permission:build"
+    name: "{state_color}建造"
+    lore:
+      - "&7放置、破坏方块和使用桶"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复继承 / 默认"
+  container:
+    slot: 11
+    material: CHEST
+    action: "permission:container"
+    name: "{state_color}容器"
+    lore:
+      - "&7打开容器及跨界物品转移"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复继承 / 默认"
+  interact:
+    slot: 12
+    material: LEVER
+    action: "permission:interact"
+    name: "{state_color}交互"
+    lore:
+      - "&7按钮、拉杆等方块交互"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复继承 / 默认"
+  entity:
+    slot: 13
+    material: ARMOR_STAND
+    action: "permission:entity"
+    name: "{state_color}实体交互"
+    lore:
+      - "&7实体交互、载具及非玩家实体伤害"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复继承 / 默认"
+  pvp:
+    slot: 14
+    material: IRON_SWORD
+    action: "permission:pvp"
+    name: "{state_color}玩家伤害"
+    lore:
+      - "&7领地内玩家之间的伤害"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复继承 / 默认"
+  explosion:
+    slot: 15
+    material: TNT
+    action: "permission:explosion"
+    name: "{state_color}爆炸"
+    lore:
+      - "&7爆炸对方块和实体的伤害"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复继承 / 默认"
+  fire:
+    slot: 16
+    material: FLINT_AND_STEEL
+    action: "permission:fire"
+    name: "{state_color}火焰"
+    lore:
+      - "&7自然点火、火焰蔓延和烧毁"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复继承 / 默认"
+  fluid:
+    slot: 19
+    material: WATER_BUCKET
+    action: "permission:fluid"
+    name: "{state_color}液体"
+    lore:
+      - "&7液体跨越领地边界"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复继承 / 默认"
+  piston:
+    slot: 20
+    material: PISTON
+    action: "permission:piston"
+    name: "{state_color}活塞"
+    lore:
+      - "&7活塞跨越领地边界"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复继承 / 默认"
+  mob_grief:
+    slot: 21
+    material: CREEPER_HEAD
+    action: "permission:mob_grief"
+    name: "{state_color}生物破坏"
+    lore:
+      - "&7生物破坏和踩踏方块"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复继承 / 默认"
+  pickup:
+    slot: 22
+    material: HOPPER
+    action: "permission:pickup"
+    name: "{state_color}拾取"
+    lore:
+      - "&7玩家拾取掉落物"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复继承 / 默认"
+  drop:
+    slot: 23
+    material: DROPPER
+    action: "permission:drop"
+    name: "{state_color}丢弃"
+    lore:
+      - "&7玩家丢弃物品"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复继承 / 默认"
+  teleport:
+    slot: 24
+    material: ENDER_PEARL
+    action: "permission:teleport"
+    name: "{state_color}传送"
+    lore:
+      - "&7传送进入领地"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复继承 / 默认"
+  enter:
+    slot: 25
+    material: OAK_DOOR
+    action: "permission:enter"
+    name: "{state_color}进入"
+    lore:
+      - "&7玩家进入领地"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复继承 / 默认"
+  manage:
+    slot: 31
+    material: WRITABLE_BOOK
+    action: "permission:manage"
+    name: "{state_color}管理"
+    lore:
+      - "&7普通权限菜单管理；不能管理信任、转让或删除领地"
+      - ""
+      - "&7当前：{state_color}{state} &7({source})"
+      - "&e左键 &7切换；&e右键 &7恢复继承 / 默认"
+  trusted:
+    slot: 38
+    material: PLAYER_HEAD
+    action: "trusted"
+    name: "&b信任玩家设置"
+    lore:
+      - "&7添加新人玩家，单独编辑每名玩家权限"
+      - "&7仅领地主人或管理员可操作"
+  entry-title:
+    slot: 41
+    material: NAME_TAG
+    action: entry-title
+    name: "&a编辑进入领地主标题"
+    lore:
+      - "&7当前：{entry_title}"
+      - "&e点击后在聊天栏输入，支持 & 颜色代码"
+      - "&7仅领地主人或管理员可修改"
+  entry-subtitle:
+    slot: 42
+    material: OAK_SIGN
+    action: entry-subtitle
+    name: "&a编辑进入领地副标题"
+    lore:
+      - "&7当前：{entry_subtitle}"
+      - "&e点击后在聊天栏输入，支持 & 颜色代码"
+      - "&7支持 {name} 和 {player} 占位符"
+  teleport-point:
+    slot: 43
+    material: ENDER_PEARL
+    action: teleport-point
+    name: "&b领地传送点"
+    lore:
+      - "&7当前：{teleport}"
+      - "&e左键 &7保存为你当前站立的位置和朝向"
+      - "&e右键 &7传送回此领地"
+      - "&7修改时必须站在领地内的安全位置"
+      - "&7仅领地主人或管理员可操作"
+  close:
+    slot: 40
+    material: BARRIER
+    action: "close"
+    name: "&c关闭"
+    lore: []

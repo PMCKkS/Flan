@@ -1,0 +1,38 @@
+# 圈地、世界限制、额度和范围显示；修改后 /flan reload。
+rules-version: 3
+claims:
+  starting-blocks: 500
+  maximum-blocks: 50000
+  minimum-area: 9
+  maximum-area: 1000000
+  maximum-claims: 20
+  # true 时新建/重新调整领地覆盖全高，不能使用 /flan mode 3d。
+  # 不自动更改已保存领地，避免改变保护范围或制造重叠。
+  ignore-y: false
+  three-dimensional: false
+  minimum-height: 1
+  maximum-selection-distance: 100
+  # 按实际世界标识精确匹配，不按维度类型匹配。
+  # 例如：
+  # disabled-worlds:
+  #   - minecraft:world_nether
+  #   - custom:lobby
+  disabled-worlds: []
+  default-name: ''
+  messages-on-crossing: true
+  accrual:
+    enabled: true
+    seconds-per-award: 600
+    blocks-per-award: 10
+  border:
+    mode: BLOCKS
+    show-holding-tool: true
+    nearby-radius: 32
+    duration-seconds: 15
+    blocks:
+      main: GOLD_BLOCK
+      sub: IRON_BLOCK
+      conflict: REDSTONE_BLOCK
+      edit: LAPIS_BLOCK
+    particle: HAPPY_VILLAGER
+    maximum-points: 160

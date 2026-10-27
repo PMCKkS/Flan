@@ -1,0 +1,49 @@
+name: Flan
+description: Flan Spigot Plugin version
+version: '${version}'
+
+main: top.pmckk.flan.Flan
+api-version: '1.21'
+
+authors: [ PMCKK ]
+website: pmckk.top
+softdepend: [PlaceholderAPI]
+commands:
+  flan:
+    description: 领地管理
+    aliases: [claim, claims]
+    usage: /flan help
+permissions:
+  flan.tp:
+    default: true
+  flan.tp.set:
+    default: true
+  flan.greeting:
+    default: true
+  flan.menu:
+    default: true
+  flan.trust:
+    default: true
+  flan.trust.edit:
+    default: true
+  flan.use:
+    default: true
+  flan.claim:
+    default: true
+  flan.tool:
+    default: true
+  flan.admin:
+    default: op
+    children:
+      flan.use: true
+      flan.claim: true
+      flan.tool: true
+      flan.greeting: true
+      flan.tp: true
+      flan.tp.set: true
+      flan.menu: true
+      flan.trust: true
+      flan.trust.edit: true
+  flan.bypass:
+    description: 可通过 /flan bypass 开关领地保护绕过
+    default: op

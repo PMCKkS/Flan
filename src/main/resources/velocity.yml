@@ -1,0 +1,6 @@
+# Velocity 端独立配置。首次启动自动生成共享密钥。
+# 将同一密钥填写到每个子服 teleport.yml 的 teleport.velocity.secret。
+Lang: zh_CN
+network:
+  secret: ''
+  timeout-seconds: 15

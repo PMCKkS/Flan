@@ -1,0 +1,269 @@
+# UTF-8 language file. Placeholders use {name}.
+prefix: "&f[&aFlan&f] &r"
+no-permission: "&cYou do not have permission."
+player-only: "&cThis command is only available to players."
+protected: "&cThis claim does not allow: {permission}"
+error: "&c{message}"
+selection: "&eCorner {corner} selected: {x}, {y}, {z}"
+created: "&aCreated {name}. Area: {blocks}. Remaining: {remaining}."
+deleted: "&aDeleted claim {name}."
+enter: "&eEntering claim: {name}"
+leave: "&7Leaving claim: {name}"
+saved: "&aData saved."
+storage-error: "&cSaving failed. Claim changes are locked. Contact an administrator."
+errors:
+  teleport-config: "Invalid teleport.yml: Velocity requires a 32-256 character secret; timeout must be 5-60 seconds."
+  teleport-point: "Invalid teleport coordinates or rotation."
+  teleport-outside: "The teleport point must be inside this claim."
+  teleport-unsafe: "No safe landing was found. Stand on solid ground with headroom and set the teleport point through the menu."
+  teleport-world: "The target claim world is not loaded."
+  teleport-denied: "Entry or teleport is denied at the destination."
+  teleport-cancelled: "The server or another plugin cancelled the teleport."
+  teleport-catalog: "This backend exceeds the cross-server claim directory limit."
+  selection-height: 'Selected corners must be within the world build heights.'
+  world-key: 'Invalid world key {world}; use namespace:world_name, for example minecraft:world_nether.'
+  entry-text: 'Titles must be a single line of up to 128 characters; & color codes are supported.'
+  entry-expired: 'Title editing expired. Open the claim menu again.'
+  trust-owner: 'The claim owner does not need to be trusted.'
+  trust-missing: 'This player is no longer trusted in the current claim.'
+  trust-exists: 'This player is already trusted; refresh the list.'
+  personal-only: 'Individual player flags only support personal action permissions.'
+  world-rules: 'Invalid disabled-worlds list or ignore-y configuration types.'
+  ignore-y: 'The server enforces ignore-y; claims cover full world height and 3D mode is disabled.'
+  gui-config: 'Invalid menu configuration; check {path}.'
+  claim-dimension: 'The claim three-dimensional field must be true or false.'
+  border-mode: 'Invalid border mode {mode}; use BLOCKS or PARTICLES.'
+  border-material: 'Invalid border material for {kind}: {material}; use a solid block.'
+  language-arguments: "Language arguments must be key/value pairs."
+  language-key: "Missing language key: {key}."
+  language-name: "Invalid language name: {language}. Use letters, digits, underscores or hyphens."
+  language-missing: "Language file lang/{language}.yml does not exist."
+  language-value: "Invalid language value: {key}."
+  number: "Enter an integer within the supported range."
+  unexpected: "The operation failed. Contact an administrator to check the console log."
+  permission: "Permission {permission} is required."
+  permission-value: "Use true, false or inherit."
+  unknown-permission: "Unknown permission: {permission}."
+  unknown-particle: "Unknown border particle: {particle}."
+  usage: "Usage: /flan {usage}"
+  player-not-found: "Player not found. The player must join the server first."
+  no-claim: "There is no claim here."
+  maintenance: "Storage migration is in progress. Please try again later."
+  inventory-full: "Your inventory is full."
+  transfer-parent-location: "Stand in the parent claim to transfer the entire claim."
+  world-disabled: "Claiming is disabled in this world."
+  area-range: "Claim area must be between {minimum} and {maximum}."
+  height: "The claim is below the minimum height."
+  world-border: "The selection is outside the world border."
+  claim-name: "Names must contain 1 to 48 characters."
+  subclaim-selection: "The selection must be entirely inside one parent claim."
+  confirm-expired: "There is no pending action, or it has expired."
+  group-missing: "The permission group does not exist."
+  group-name: "Group names may only contain letters, digits, underscores and hyphens."
+  negative-number: "The amount cannot be negative."
+  page-range: "Page must be between 1 and {pages}."
+  storage-unsupported: "Unsupported storage type."
+  storage-same: "The target storage type is already active."
+  storage-unhealthy: "Storage is unavailable. Claim changes are locked. Contact an administrator."
+  manage: "You cannot manage this claim."
+  owner: "Only the claim owner can perform this action."
+  selection-distance: "The selected block is too far away."
+  selection-required: "Select two corners with the claiming tool first."
+  selection-world: "Both corners must be in your current world."
+  config-sections: "config.yml must contain storage and claims sections."
+  config-limits: "Invalid allowance, claim area or accrual configuration."
+  tool-material: "tool.material is not a valid item."
+  config-group: "Invalid permission group name: {group}."
+  config-selection: "Invalid selection distance or minimum height."
+  particle-data: "Choose a particle that requires no extra data, such as HAPPY_VILLAGER or END_ROD."
+  table-prefix: "Invalid database table prefix."
+  claim-id-mismatch: "Claim IDs do not match."
+  migration-not-empty: "The target already contains data. Back it up and empty it before migrating."
+  migration-verification: "Migration read-back verification failed."
+  sqlite-path: "The SQLite file must be inside the plugin data directory."
+  mysql-prefix: "Invalid MySQL table prefix."
+  mysql-public-key: "MySQL refused authentication public key retrieval. For a trusted database connection, set storage.mysql.allow-public-key-retrieval: true in storage.yml or append &allowPublicKeyRetrieval=true to parameters, then restart. Alternatively configure verified TLS or a local server RSA public key."
+  mysql-database: "Invalid MySQL database name."
+  storage-type: "storage.type must be YAML, SQLITE or MYSQL."
+  claim-fields: "Invalid required claim fields."
+  claim-mapping: "Claim field must be a mapping: {key}."
+  claim-bounds: "Incomplete claim bounds or values outside the integer range."
+  flag-boolean: "Permission values must be boolean."
+  schema-version: "Unsupported data schema version."
+  data-mapping: "Data field must be a mapping: {key}."
+  claim-path-id: "The claim ID does not match its data path."
+  player-fields: "Invalid player data fields."
+  duplicate-player: "Duplicate player ID."
+  duplicate-claim: "Duplicate claim ID."
+  claim-too-large: "Claim area is too large: {id}."
+  hierarchy: "Invalid subclaim hierarchy: {id}."
+  owner-account-missing: "Claim owner account is missing: {id}."
+  stored-overlap: "Stored claims overlap: {id}."
+  player-not-joined: "The player has not joined this server."
+  allowance-range: "Allowance cannot be below used area or above the configured maximum."
+  claim-limit: "The claim count limit has been reached."
+  claim-missing: "The claim does not exist."
+  transfer-operation: "Use the transfer operation to change the owner."
+  subclaim-parent: "A subclaim must fit entirely inside its parent. Only one level of subclaims is supported."
+  resize-children: "Resizing would leave a subclaim outside its parent."
+  player-data-missing: "Player data is missing."
+  insufficient-blocks: "Not enough remaining claim blocks."
+  overlap: "Overlaps claim {name}."
+  transfer-parent: "Transfer the parent claim. Its subclaims will be transferred with it."
+  already-owner: "That player already owns this claim."
+  transfer-capacity: "The recipient has insufficient block allowance or claim slots."
+  bounds-order: "Claim bounds are in the wrong order."
+  negative-account: "Player allowance cannot be negative."
+commands:
+  teleport-set: "&aSaved your current position and rotation as the claim teleport point."
+  teleport-done: "&aTeleported to claim {name}."
+  entry-title-prompt: '&eEnter the title within 60 seconds. Supports & colors, {name}, {player}; clear for empty, reset for default, cancel to stop.'
+  entry-subtitle-prompt: '&eEnter the subtitle within 60 seconds. Supports & colors, {name}, {player}; clear for empty, reset for default, cancel to stop.'
+  entry-saved: '&aClaim entry titles saved.'
+  entry-cancelled: '&7Title editing cancelled.'
+  trust-added: '&aAdded trusted player {player}. Edit their permissions in the menu.'
+  trust-removed: '&aRemoved {player} from trust in this claim and blocked inherited trust here.'
+  migration-config: '&eData migrated, but updating storage.yml failed. Set storage.type to {type} manually and restart.'
+  claim-mode: '&aCurrent claim mode: {mode}. Use /flan mode 2d or /flan mode 3d to switch.'
+  selection-height: '&eSelection mode: {mode}, height: {minimum} -> {maximum}.'
+  info-mode: '&7Claim type: {mode}'
+  reloaded: "&aConfiguration and language reloaded. Storage connection and autosave interval changes require a restart."
+  tool-given: "&aRight click for corner one, left click for corner two, then use /flan create <name>."
+  renamed: "&aClaim renamed."
+  resized: "&aClaim boundaries updated. Remaining blocks: {remaining}."
+  confirm-delete: "&eUse /flan confirm within 30 seconds to delete {name} and its subclaims."
+  confirm-transfer: "&eUse /flan confirm within 30 seconds to transfer the claim and its subclaims to {player}."
+  bypass: "&aClaim protection bypass: {state}"
+  transferred: "&aClaim transferred."
+  untrusted: "&aRemoved trust in this claim and blocked inherited trust here."
+  trusted: "&aPlayer group updated."
+  flag-updated: "&aPermission updated."
+  group-updated: "&aPermission group updated."
+  group-entry: "&e{group} &7{permissions}"
+  blocks-updated: "&aUpdated {player} total allowance to {total}."
+  blocks-info: "&e{player}: total {total}, used {used}, remaining {remaining}."
+  list-title: "&6Claims {page}/{pages}"
+  list-entry: "&e{name} &7{world} ({x}, {z}) Area: {area}"
+  info-title: "&6{name}{type} &7ID: {id}"
+  info-owner: "&eOwner: {owner}. Area: {area}."
+  info-bounds: "&7Bounds: {min_x},{min_y},{min_z} -> {max_x},{max_y},{max_z}"
+  info-members: "&7Local members: {count}. Use /flan menu to manage permissions."
+  storage-info: "&eStorage: {type}. Status: {state}. Migrate: /flan storage migrate YAML|SQLITE|MYSQL"
+  migration-start: "&eMigrating to {type}. Data changes are paused."
+  migration-done: "&aMigration verified and configuration updated. Restart now to activate {type}. Changes remain locked until restart."
+  migration-failed: "&cMigration failed: {reason}"
+  selection-area: "&eSelected area: {area}. Use /flan create <name>."
+help:
+  player:
+    - "&e/flan tp <claim name> &7- Return to your claim, including across servers"
+    - '&e/flan trusted &7Manage trusted players and edit individual permissions'
+    - '&e/flan mode 2d|3d &7Switch claim mode; 3d uses both corner heights'
+    - "&6/flan tool &7Get the tool; right click corner one, left click corner two"
+    - "&e/flan create [name] &7Create; subclaim [name] creates a subclaim"
+    - "&e/flan info | list [page] | blocks | show | menu"
+    - "&e/flan rename <name> | resize | delete | transfer <player> | confirm"
+    - "&e/flan trust <player> [group] | untrust <player> | group [name permission true|false]"
+    - "&e/flan flag <permission> true|false|inherit"
+  admin:
+    - "&cAdmin: adminclaim | bypass | reload | save | storage | blocks <player> set|add|take <amount>"
+usage:
+  tp: "tp <claim name or server/claim name or UUID>"
+  mode: 'mode 2d|3d'
+  rename: "rename <name>"
+  transfer: "transfer <player>"
+  trust: "trust <player> [group]"
+  untrust: "untrust <player>"
+  flag: "flag <permission> true|false|inherit"
+  group: "group <name> <permission> true|false"
+  blocks-admin: "blocks <player> set|add|take <amount>"
+  blocks: "blocks [player] or /flan blocks <player> set|add|take <amount>"
+  storage: "storage migrate YAML|SQLITE|MYSQL"
+labels:
+  mode-2d: '2D (full world height)'
+  mode-3d: '3D (corner heights)'
+  enabled: "enabled"
+  disabled: "disabled"
+  allowed: "allowed"
+  denied: "denied"
+  inherited: " (inherited / default)"
+  explicit: " (local setting)"
+  subclaim: " (subclaim)"
+  admin-claim: "Admin claim"
+  healthy: "healthy"
+  unhealthy: "unavailable"
+  permission-separator: ", "
+  teleport-enter: "teleport / enter"
+menu:
+  title: "&6Claim permissions: {name}"
+  permission-name: "{state_color}{permission}"
+  permission-lore:
+    - "&7{description}"
+    - ""
+    - "&7Current: {state_color}{state} &7{source}"
+    - "&eLeft click &7to toggle allow / deny"
+    - "&eRight click &7to inherit / use default"
+  close-name: '&cClose menu'
+  close-lore:
+    - '&7Click to close claim permissions'
+permission-descriptions:
+  build: 'Block placing, breaking and bucket use'
+  container: 'Container access and cross-boundary item transfer'
+  interact: 'Buttons, levers and other block interactions'
+  entity: 'Entity interactions, vehicles and non-player damage'
+  pvp: 'Damage between players in the claim'
+  explosion: 'Explosion damage to blocks and entities'
+  fire: 'Natural ignition, fire spread and burning'
+  fluid: 'Fluid flow across claim boundaries'
+  piston: 'Piston movement across claim boundaries'
+  mob_grief: 'Mob block damage and trampling'
+  pickup: 'Players picking up dropped items'
+  drop: 'Players dropping items'
+  teleport: 'Teleporting into the claim'
+  enter: 'Players entering the claim'
+  manage: 'Permission menu access; only owners or admins can change this flag'
+tool:
+  name: "&6Claiming tool"
+  lore:
+    - "&7Right click to select corner one"
+    - "&7Left click to select corner two"
+    - "&e/flan create <name> &7to create a claim"
+claim:
+  entry-title: '&f[&aFlan&f] &r&a{name}'
+  entry-subtitle: '&7Welcome to this claim'
+  default-name: "My claim"
+logs:
+  teleport-network: "Claim teleport communication failed: {reason}"
+  velocity-enabled: "Flan Velocity started and loaded the cross-server claim directory."
+  velocity-failed: "Flan Velocity failed to start. Check its configuration."
+  velocity-message: "Flan Velocity communication or directory save failed. Check the shared secret and server logs."
+  save-failed: "Saving failed. Claim changes are paused until a save succeeds."
+  enabled: "Flan enabled. Language: {language}. Storage: {type}. Claims: {count}."
+  startup-failed: "Flan failed to start and was disabled to protect stored data: {reason}"
+  close-failed: "Error closing storage. Check recovery files."
+  migration-failed: "Storage migration failed: {reason}"
+  command-failed: "Command failed: {command}"
+permissions:
+  build: "Build"
+  container: "Container"
+  interact: "Interact"
+  entity: "Entity interaction"
+  pvp: "Player damage"
+  explosion: "Explosion damage"
+  fire: "Fire spread"
+  fluid: "Fluid crossing"
+  piston: "Piston crossing"
+  mob_grief: "Mob griefing"
+  pickup: "Pickup"
+  drop: "Drop"
+  teleport: "Teleport"
+  enter: "Enter"
+  manage: "Manage"
+
+network:
+  accepted: "&aConnecting to the destination server."
+  requesting: "&eRequesting a cross-server claim teleport..."
+  timeout: "&cCross-server teleport timed out. Check that the proxy and target backend have Flan and the same shared secret."
+  failed: "&cThe destination server is unavailable or not ready. Try again later."
+  not-found: "&cNo matching claim owned by you was found. Cross-server discovery needs a player online on the target backend to synchronize."
+  ambiguous: "&cMultiple claims match. Use server/claim name, or the claim UUID shown by /flan info."
+  busy: "&eA teleport request is already in progress. Please wait."

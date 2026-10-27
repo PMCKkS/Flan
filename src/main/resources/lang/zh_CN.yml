@@ -1,0 +1,269 @@
+# UTF-8 language file. Placeholders use {name}.
+prefix: "&f[&aFlan&f] &r"
+no-permission: "&c没有权限。"
+player-only: "&c该命令只能由玩家使用。"
+protected: "&c这片领地不允许此操作：{permission}"
+error: "&c{message}"
+selection: "&e已选择角点 {corner}：{x}, {y}, {z}"
+created: "&a已创建领地 {name}，面积 {blocks}，剩余额度 {remaining}。"
+deleted: "&a已删除领地 {name}。"
+enter: "&e进入领地：{name}"
+leave: "&7离开领地：{name}"
+saved: "&a数据已保存。"
+storage-error: "&c数据保存失败，领地修改暂时锁定；请联系管理员查看日志。"
+errors:
+  teleport-config: "teleport.yml 配置无效；启用 Velocity 时密钥须为 32 至 256 个字符，超时须为 5 至 60 秒。"
+  teleport-point: "传送点坐标或朝向格式无效。"
+  teleport-outside: "传送点必须位于这片领地内部。"
+  teleport-unsafe: "领地内未找到安全落点，请站在有地面且头顶有空间的位置，通过菜单重新设置传送点。"
+  teleport-world: "目标领地的世界未加载。"
+  teleport-denied: "目标位置不允许进入或传送。"
+  teleport-cancelled: "传送被服务器或其他插件取消。"
+  teleport-catalog: "领地数量超出单个子服的跨服目录上限。"
+  selection-height: '选点必须位于世界允许的建筑高度内。'
+  world-key: '世界标识 {world} 无效，请使用 命名空间:世界名称，例如 minecraft:world_nether。'
+  entry-text: '标题必须为单行文本，最多 128 个字符；支持 & 颜色代码。'
+  entry-expired: '标题编辑已超时，请重新打开领地管理界面。'
+  trust-owner: '领地主人不需要添加为信任玩家。'
+  trust-missing: '该玩家已不在当前领地的有效信任列表中。'
+  trust-exists: '该玩家已被信任，请刷新列表。'
+  personal-only: '玩家单独权限仅支持玩家操作类权限。'
+  world-rules: '禁止圈地的世界列表或 ignore-y 配置类型无效。'
+  ignore-y: '管理员已开启 ignore-y，圈地使用世界全高，不能切换为三维模式。'
+  gui-config: '菜单配置无效，请检查 {path}。'
+  claim-dimension: '领地 three-dimensional 字段必须为 true 或 false。'
+  border-mode: '范围显示模式 {mode} 无效，请使用 BLOCKS 或 PARTICLES。'
+  border-material: '范围显示材质 {kind}: {material} 无效，请使用实心方块。'
+  language-arguments: "语言参数必须成对提供名称与值。"
+  language-key: "缺少语言节点：{key}。"
+  language-name: "语言名称无效：{language}，仅支持字母、数字、下划线和短横线。"
+  language-missing: "找不到语言文件 lang/{language}.yml。"
+  language-value: "语言文件节点格式错误：{key}。"
+  number: "请输入有效范围内的整数。"
+  unexpected: "操作失败，请联系管理员查看控制台日志。"
+  permission: "需要 {permission} 权限。"
+  permission-value: "权限值只能是 true、false 或 inherit。"
+  unknown-permission: "未知权限：{permission}。"
+  unknown-particle: "未知边界粒子：{particle}。"
+  usage: "用法：/flan {usage}"
+  player-not-found: "未找到玩家，请让该玩家先加入服务器。"
+  no-claim: "当前位置没有领地。"
+  maintenance: "正在迁移存储，请稍后再试。"
+  inventory-full: "背包已满。"
+  transfer-parent-location: "请站在父领地范围内转让整个领地。"
+  world-disabled: "当前世界禁止圈地。"
+  area-range: "圈地面积必须在 {minimum} 至 {maximum} 之间。"
+  height: "领地高度低于配置要求。"
+  world-border: "选区超出世界边界。"
+  claim-name: "名称应为 1 至 48 个字符。"
+  subclaim-selection: "选区必须完全位于同一个父领地内。"
+  confirm-expired: "没有待确认操作，或操作已过期。"
+  group-missing: "权限组不存在。"
+  group-name: "组名仅支持英文字母、数字、下划线和短横线。"
+  negative-number: "数量不能为负数。"
+  page-range: "页码应在 1 至 {pages} 之间。"
+  storage-unsupported: "不支持的存储类型。"
+  storage-same: "目标与当前存储类型相同。"
+  storage-unhealthy: "存储异常，领地修改暂时锁定，请联系管理员。"
+  manage: "没有管理这片领地的权限。"
+  owner: "只有领地主人可以执行此操作。"
+  selection-distance: "选点超出允许距离。"
+  selection-required: "请先用圈地工具选择两个角点。"
+  selection-world: "两个角点必须位于当前世界。"
+  config-sections: "config.yml 缺少 storage 或 claims 配置节。"
+  config-limits: "额度、圈地面积或在线奖励配置无效。"
+  tool-material: "tool.material 不是有效物品。"
+  config-group: "权限组名称无效：{group}"
+  config-selection: "选点距离或最小高度配置无效。"
+  particle-data: "边界粒子必须是不需要额外数据的粒子，例如 HAPPY_VILLAGER、END_ROD。"
+  table-prefix: "数据库表前缀无效。"
+  claim-id-mismatch: "领地 ID 数据不一致。"
+  migration-not-empty: "目标存储已有数据，拒绝覆盖。请先备份并清空目标存储。"
+  migration-verification: "迁移后读回校验失败。"
+  sqlite-path: "SQLite 文件必须位于插件数据目录。"
+  mysql-prefix: "MySQL 表前缀无效。"
+  mysql-public-key: "MySQL 拒绝获取认证公钥。若数据库连接可信，请在 storage.yml 的 storage.mysql 下设置 allow-public-key-retrieval: true，或在 parameters 后追加 &allowPublicKeyRetrieval=true，然后重启。也可配置经验证的 TLS 或本地服务器 RSA 公钥。"
+  mysql-database: "MySQL 数据库名称无效。"
+  storage-type: "storage.type 只能是 YAML、SQLITE 或 MYSQL。"
+  claim-fields: "领地必填字段格式错误。"
+  claim-mapping: "领地字段应为映射：{key}"
+  claim-bounds: "领地边界数据不完整或超出整数范围。"
+  flag-boolean: "权限字段必须为布尔值。"
+  schema-version: "不支持的数据版本。"
+  data-mapping: "数据字段应为映射：{key}"
+  claim-path-id: "领地 ID 与数据路径不一致。"
+  player-fields: "玩家数据字段格式错误。"
+  duplicate-player: "重复的玩家 ID。"
+  duplicate-claim: "重复的领地 ID。"
+  claim-too-large: "领地面积过大：{id}"
+  hierarchy: "无效的子领地关系：{id}"
+  owner-account-missing: "领地主人缺少额度数据：{id}"
+  stored-overlap: "存储中存在重叠领地：{id}"
+  player-not-joined: "玩家尚未加入过服务器。"
+  allowance-range: "额度不能低于已用面积或高于配置上限。"
+  claim-limit: "已达到领地数量上限。"
+  claim-missing: "领地不存在。"
+  transfer-operation: "请使用转让操作修改领地主人。"
+  subclaim-parent: "子领地必须完全位于父领地内，且只支持一层子领地。"
+  resize-children: "缩小后将有子领地落在外面。"
+  player-data-missing: "玩家数据不存在。"
+  insufficient-blocks: "剩余领地方块额度不足。"
+  overlap: "与领地「{name}」重叠。"
+  transfer-parent: "请转让父领地，子领地会一同转让。"
+  already-owner: "对方已经是领地主人。"
+  transfer-capacity: "对方的领地数量或方块额度不足。"
+  bounds-order: "领地边界顺序错误。"
+  negative-account: "玩家额度不能为负数。"
+commands:
+  teleport-set: "&a已将领地传送点设为你当前的位置和朝向。"
+  teleport-done: "&a已传送到领地 {name}。"
+  entry-title-prompt: '&e请在 60 秒内输入主标题。支持 & 颜色代码、{name}、{player}；clear 留空，reset 恢复默认，cancel 取消。'
+  entry-subtitle-prompt: '&e请在 60 秒内输入副标题。支持 & 颜色代码、{name}、{player}；clear 留空，reset 恢复默认，cancel 取消。'
+  entry-saved: '&a已保存进入领地标题。'
+  entry-cancelled: '&7已取消标题编辑。'
+  trust-added: '&a已添加信任玩家 {player}，可在界面中编辑其权限。'
+  trust-removed: '&a已取消 {player} 在当前领地的信任及父领地信任继承。'
+  migration-config: '&e数据已迁移，但写入 storage.yml 失败。请手动设置 storage.type 为 {type} 后重启。'
+  claim-mode: '&a当前圈地模式：{mode}。使用 /flan mode 2d 或 /flan mode 3d 切换。'
+  selection-height: '&e选区模式：{mode}，高度：{minimum} → {maximum}。'
+  info-mode: '&7领地类型：{mode}'
+  reloaded: "&a配置与语言已重载；存储连接和自动保存周期修改需要重启。"
+  tool-given: "&a右键选择角点一，左键选择角点二，使用 /flan create 名称 确认。"
+  renamed: "&a领地已重命名。"
+  resized: "&a领地边界已更新，剩余额度 {remaining}。"
+  confirm-delete: "&e使用 /flan confirm 确认删除「{name}」，其子领地也会删除；30 秒内有效。"
+  confirm-transfer: "&e使用 /flan confirm 确认转让给 {player}；子领地将一同转让。"
+  bypass: "&a领地保护绕过：{state}"
+  transferred: "&a领地已转让。"
+  untrusted: "&a已取消该玩家在当前领地的信任及父领地信任继承。"
+  trusted: "&a已更新玩家权限组。"
+  flag-updated: "&a权限已更新。"
+  group-updated: "&a权限组已更新。"
+  group-entry: "&e{group} &7{permissions}"
+  blocks-updated: "&a已更新 {player} 的总额度为 {total}。"
+  blocks-info: "&e{player}：总额度 {total}，已用面积 {used}，剩余 {remaining}。"
+  list-title: "&6领地列表 {page}/{pages}"
+  list-entry: "&e{name} &7{world} ({x}, {z}) 面积 {area}"
+  info-title: "&6{name}{type} &7ID: {id}"
+  info-owner: "&e主人：{owner}，面积：{area}"
+  info-bounds: "&7边界：{min_x},{min_y},{min_z} → {max_x},{max_y},{max_z}"
+  info-members: "&7本领地成员：{count}，使用 /flan menu 管理权限。"
+  storage-info: "&e当前存储：{type}，状态：{state}。迁移：/flan storage migrate YAML|SQLITE|MYSQL"
+  migration-start: "&e正在迁移至 {type}，迁移期间暂停数据修改。"
+  migration-done: "&a迁移及读回校验完成，已更新配置。请现在重启服务器以启用 {type}；重启前保持修改锁定。"
+  migration-failed: "&c迁移失败：{reason}"
+  selection-area: "&e选区面积：{area}，使用 /flan create 名称 创建。"
+help:
+  player:
+    - "&e/flan tp 领地名称 &7- 返回领地，支持跨服"
+    - '&e/flan trusted &7打开信任玩家管理，添加玩家并单独编辑权限'
+    - '&e/flan mode 2d|3d &7切换圈地模式；3d 使用两个角点的高度'
+    - "&6/flan tool &7领取工具；右键角点一，左键角点二"
+    - "&e/flan create [名称] &7创建；subclaim [名称] 创建子领地"
+    - "&e/flan info | list [页码] | blocks | show | menu"
+    - "&e/flan rename 名称 | resize | delete | transfer 玩家 | confirm"
+    - "&e/flan trust 玩家 [组名] | untrust 玩家 | group [组名 权限 true|false]"
+    - "&e/flan flag 权限 true|false|inherit"
+  admin:
+    - "&c管理员：adminclaim | bypass | reload | save | storage | blocks 玩家 set|add|take 数量"
+usage:
+  tp: "tp <领地名称或服务器/领地名称或UUID>"
+  mode: 'mode 2d|3d'
+  rename: "rename 名称"
+  transfer: "transfer 玩家"
+  trust: "trust 玩家 [权限组]"
+  untrust: "untrust 玩家"
+  flag: "flag 权限 true|false|inherit"
+  group: "group 组名 权限 true|false"
+  blocks-admin: "blocks 玩家 set|add|take 数量"
+  blocks: "blocks [玩家] 或 /flan blocks 玩家 set|add|take 数量"
+  storage: "storage migrate YAML|SQLITE|MYSQL"
+labels:
+  mode-2d: '二维（世界全高）'
+  mode-3d: '三维（角点高度）'
+  enabled: "开启"
+  disabled: "关闭"
+  allowed: "允许"
+  denied: "禁止"
+  inherited: "（继承 / 默认）"
+  explicit: "（本领地设置）"
+  subclaim: "（子领地）"
+  admin-claim: "管理员领地"
+  healthy: "正常"
+  unhealthy: "异常"
+  permission-separator: "、"
+  teleport-enter: "传送 / 进入"
+menu:
+  title: "&6领地权限：{name}"
+  permission-name: "{state_color}{permission}"
+  permission-lore:
+    - "&7{description}"
+    - ""
+    - "&7当前：{state_color}{state} &7{source}"
+    - "&e左键 &7切换允许 / 禁止"
+    - "&e右键 &7恢复继承 / 默认"
+  close-name: '&c关闭菜单'
+  close-lore:
+    - '&7点击关闭领地权限界面'
+permission-descriptions:
+  build: '控制放置、破坏方块和使用桶'
+  container: '控制打开容器及跨界物品转移'
+  interact: '控制按钮、拉杆等方块交互'
+  entity: '控制实体交互、载具及非玩家实体伤害'
+  pvp: '控制领地内的玩家之间伤害'
+  explosion: '控制爆炸对方块和实体的伤害'
+  fire: '控制自然点火、火焰蔓延和烧毁'
+  fluid: '控制液体跨越领地边界'
+  piston: '控制活塞跨越领地边界'
+  mob_grief: '控制生物破坏和踩踏方块'
+  pickup: '控制玩家拾取掉落物'
+  drop: '控制玩家丢弃物品'
+  teleport: '控制传送进入领地'
+  enter: '控制玩家进入领地'
+  manage: '控制普通权限菜单的管理；仅主人或管理员可修改此项'
+tool:
+  name: "&6领地圈地工具"
+  lore:
+    - "&7右键选择第一个角点"
+    - "&7左键选择第二个角点"
+    - "&e/flan create 名称 &7创建领地"
+claim:
+  entry-title: '&f[&aFlan&f] &r&a{name}'
+  entry-subtitle: '&7欢迎来到这片领地'
+  default-name: "我的领地"
+logs:
+  teleport-network: "领地跨服通信失败：{reason}"
+  velocity-enabled: "Flan Velocity 已启动，跨服领地目录已加载。"
+  velocity-failed: "Flan Velocity 启动失败，请检查配置。"
+  velocity-message: "Flan Velocity 通信或目录保存失败，请检查密钥和服务器日志。"
+  save-failed: "数据保存失败；已暂停领地修改，将在下次保存时重试。"
+  enabled: "Flan 已启用，语言 {language}，存储 {type}，领地 {count} 个。"
+  startup-failed: "Flan 启动失败，为避免空数据覆盖，插件已停用：{reason}"
+  close-failed: "关闭存储时发生错误，请检查 recovery 文件。"
+  migration-failed: "存储迁移失败：{reason}"
+  command-failed: "执行命令时发生错误：{command}"
+permissions:
+  build: "建造"
+  container: "容器"
+  interact: "交互"
+  entity: "实体交互"
+  pvp: "玩家伤害"
+  explosion: "爆炸破坏"
+  fire: "火焰蔓延"
+  fluid: "流体跨界"
+  piston: "活塞跨界"
+  mob_grief: "生物破坏"
+  pickup: "拾取"
+  drop: "丢弃"
+  teleport: "传送"
+  enter: "进入"
+  manage: "管理"
+
+network:
+  accepted: "&a正在连接目标服务器。"
+  requesting: "&e正在请求跨服返回领地……"
+  timeout: "&c跨服传送超时，请确认代理及目标子服均安装 Flan，并已配置相同密钥。"
+  failed: "&c目标服务器连接失败或尚未就绪，请稍后重试。"
+  not-found: "&c未找到你拥有的此名称领地；跨服目录需等待目标子服至少一名玩家在线完成同步。"
+  ambiguous: "&c有多个同名领地，请使用 服务器名/领地名称，或领地 UUID（/flan info 可查看）。"
+  busy: "&e已有传送请求正在处理，请稍候。"

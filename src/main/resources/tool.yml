@@ -1,0 +1,7 @@
+# 主手右键角点一，左键角点二。名称/Lore 留空使用语言文件。
+tool:
+  material: GOLDEN_HOE
+  name: ''
+  lore: []
+  custom-model-data: -1
+  require-marker: true

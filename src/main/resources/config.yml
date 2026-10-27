@@ -1,0 +1,6 @@
+# Flan Spigot 1.21.1 / Java 21
+config-version: 2
+Lang: zh_CN
+# 圈地及维度: claims.yml；数据存储: storage.yml
+# 默认权限组: permissions.yml；圈地工具: tool.yml
+# 全部界面与文字: gui/；聊天和日志: lang/

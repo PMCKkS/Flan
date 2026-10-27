@@ -1,0 +1,8 @@
+{
+  "id": "flan",
+  "name": "Flan",
+  "version": "${version}",
+  "description": "Cross-server claim teleport bridge for Flan.",
+  "authors": ["PMCKK"],
+  "main": "top.pmckk.flan.velocity.FlanVelocity"
+}
