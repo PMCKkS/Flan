@@ -33,6 +33,7 @@ public final class Flan extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        getServer().getLogger().log(Level.INFO, "[Flan] 领地插件已启动!");
         Storage opened = null;
         try {
             messages = Messages.load(getDataFolder().toPath().resolve("lang"), "zh_CN");
